@@ -37,23 +37,24 @@ a:hover {
 
 header#cabecalho img#icone {
     position: absolute;
-    left: 850px;
-    top: 70px;
+    left: 950px;
+    top: 50px;
 }
 
 header#cabecalho {
     border-bottom: 1px #606060 solid;
     height: 150px;
-    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
 }
 
 header#cabecalho h1 {
-    font-family: 'FonteLogo', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-size: 30pt;
     color: #606060;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
     padding: 0px;
     margin-bottom: 0px;
+    margin-top: 5px;
 }
 
 header#cabecalho h2 {
@@ -151,7 +152,7 @@ article#noticia-principal h2 {
 }
 
 header#cabecalho-artigo h1 {
-    font-family: 'FonteLogo', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-size: 20pt;
     color: #606060;
     margin-bottom: 0px;
@@ -185,7 +186,7 @@ aside#lateral {
 }
 
 aside#lateral h1 {
-    font-family: 'FonteLogo', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-size: 20pt;
     color: #606060;
     margin-top: 0px;
