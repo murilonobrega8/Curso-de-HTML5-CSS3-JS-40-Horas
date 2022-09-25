@@ -48,33 +48,44 @@
                         </hgroup>
                     </header>
 
-                    Identificação do Usuário
-                    Nome:
-                    Senha:
-                    E-mail:
-                    Sexo:
-                        - Masculino
-                        - Feminino
-                    Data de Nascimento:
+                    <form>
+                        <fieldset id="usuario">
+                            <legend>Identificação do Usuário</legend>
+                                <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+                                <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="08 dígitos"/></p>
+                                <p><label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="seuemail@seuprovedor.com"/></p>
+                                    <fieldset id="sexo">
+                                        <legend>Sexo:</legend>
+                                            <input type="radio" name="tSexo" id="cMas"/> <label for="cMas">Masculino</label><br>
+                                            <input type="radio" checked name="tSexo" id="cFem"/> <label for="cFem">Feminino</label>
+                                    </fieldset>    
+                                <p><label for="cNasc">Data de Nascimento: <input type="date" name="tNasc" id="cNasc"/></label></p>
+                        </fieldset>
 
-                    Endereço do Usuário
-                        Logradouro:
-                        Número:
-                        Estado:
-                        Cidade:
+                        <fieldset id="endereco">
+                            <legend>Endereço do Usuário</legend>
+                                <p><label for="cRua">Logradouro:</label> <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av., etc.."/></p>
+                                <p><label for="cNum">Número:</label> <input type="number" name="tNum" id="cNum" mix="0" max="99999" placeholder="Número do Imóvel"/></p>
+                                <p><label for="cEst">Estado:</label> <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av., etc.."/></p>
+                                <p><label for="cCid">Cidade:</label> <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av., etc.."/></p>
+                        </fieldset>
 
-                    Mensagem do Usuário
-                        Grau de Urgência:
-                        Mensagem:
+                        <fieldset id="mensagem">
+                            <legend>Mensagem do Usuário</legend>
+                                Grau de Urgência:
+                                Mensagem:
+                        </fieldset>
 
-                    Quero um Google Glass
-                        Gostaria de adquirir um Google Glass quando disponível
-                        Cor:
-                        Quantidade:
-                        Preço Total: R$
+                        <fieldset id="pedido">
+                            <legend>Quero um Google Glass</legend>
+                                Gostaria de adquirir um Google Glass quando disponível
+                                Cor:
+                                Quantidade:
+                                Preço Total: R$
+                        </fieldset>
 
-
-                    [BOTÃO ENVIAR]
+                        [BOTÃO ENVIAR]
+                    </form>
                 </article>
             </section>
     
