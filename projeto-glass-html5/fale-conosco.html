@@ -48,7 +48,7 @@
                         </hgroup>
                     </header>
 
-                    <form>
+                    <form method="post" id="fContato" action="mailto:contato@cursoemvideo.com">
                         <fieldset id="usuario">
                             <legend>Identificação do Usuário</legend>
                                 <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
@@ -66,22 +66,41 @@
                             <legend>Endereço do Usuário</legend>
                                 <p><label for="cRua">Logradouro:</label> <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av., etc.."/></p>
                                 <p><label for="cNum">Número:</label> <input type="number" name="tNum" id="cNum" mix="0" max="99999" placeholder="Número do Imóvel"/></p>
-                                <p><label for="cEst">Estado:</label> <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av., etc.."/></p>
-                                <p><label for="cCid">Cidade:</label> <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av., etc.."/></p>
+                                <p><label for="cEst">Estado:</label>
+                                    <select name="tEst" id="cEst">
+                                        <optgroup label="Região Sudeste">
+                                            <option value="RJ">Rio de Janeiro</option>
+                                            <option value="SP" selected>São Paulo</option>
+                                            <option value="MG">Minas Gerais</option>
+                                        </optgroup>
+                                        <optgroup label="Região Nordeste">
+                                            <option value="MA">Maranhão</option>
+                                            <option value="CE">Ceará</option>
+                                            <option value="PE">Pernambuco</option>
+                                        </optgroup>
+                                    </select>    
+                                </p>
+                                <p><label for="cCid">Cidade:</label> <input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Sua Cidade" list="cidades"/></p>
+                                    <datalist id="cidades">
+                                        <option value="Rio de Janeiro"></option>
+                                        <option value="Nova Iguaçu"></option>
+                                        <option value="Niterói"></option>
+                                        <option value="Belford Roxo"></option>
+                                    </datalist>
                         </fieldset>
 
                         <fieldset id="mensagem">
                             <legend>Mensagem do Usuário</legend>
-                                Grau de Urgência:
-                                Mensagem:
+                                <p><label for="cUrg">Grau de Urgência:</label> Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx</p>
+                                <p><label for="cMsg">Mensagem:</label> <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Digite aqui sua mensagem.."></textarea></p>
                         </fieldset>
 
                         <fieldset id="pedido">
                             <legend>Quero um Google Glass</legend>
-                                Gostaria de adquirir um Google Glass quando disponível
-                                Cor:
-                                Quantidade:
-                                Preço Total: R$
+                                <p><label for="cPed">Gostaria de adquirir um Google Glass quando disponível:</label> <input type="text" name="tPed" id="cPed" size="13" maxlength="80" placeholder="Nome da Cidade"/></p>
+                                <p><label for="cCor">Cor::</label> <input type="text" name="tCor" id="cCor" size="13" maxlength="80" placeholder="Nome da Cidade"/></p>
+                                <p><label for="cQtd">Quantidade::</label> <input type="text" name="tQtd" id="cQtd" size="13" maxlength="80" placeholder="Nome da Cidade"/></p>
+                                <p><label for="cTot">Preço Total: R$:</label> <input type="text" name="tTot" id="cTot" size="13" maxlength="80" placeholder="Nome da Cidade"/></p>
                         </fieldset>
 
                         [BOTÃO ENVIAR]
